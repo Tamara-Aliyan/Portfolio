@@ -1,0 +1,303 @@
+:root{
+    --main-color:#f2a29b;
+    --first-color:#D95964;
+    --section-color:#F2EBDF;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    height: 50px;
+}
+.navbar{
+    background-color: var(--section-color);
+}
+.nav-link{
+    color: var(--main-color);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-link:hover{
+    background-color: var(--main-color);
+    color: var(--section-color);
+}
+.main{
+    color: var(--section-color);
+    background-image: url("../img/bg-3.png");
+}
+.main h3{
+    
+    font-size: 4.4rem;
+    width: 700;
+}
+.main h6{
+    font-size: 1.4rem;
+    line-height: 1;
+    border-bottom:3px solid var(--first-color) ;
+}
+.btn1{
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 300;
+    background-color: var(--first-color);
+    color: var(--section-color);
+}
+.btn1:hover{
+    background-color: var(--section-color);
+    color: var(--first-color);
+    border: 1px solid var(--first-color);
+    transition: 0.5s;
+}
+.about .container ul li {
+    padding-bottom: 10px;
+}
+.about img{
+    box-shadow: 0px -1px 38px 18px rgba(242,162,155,0.49);
+    -webkit-box-shadow: 0px -1px 38px 18px rgba(242,162,155,0.49);
+    -moz-box-shadow: 0px -1px 38px 18px rgba(242,162,155,0.49);
+}
+.progress{
+    background-color: var(--section-color);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+    box-shadow: 0px -1px 38px 18px rgba(242,162,155,0.49)inset;
+    -webkit-box-shadow: 0px -1px 38px 18px rgba(242,162,155,0.49)inset;
+    -moz-box-shadow: 0px -1px 38px 18px rgba(242,162,155,0.49)inset;
+}
+.progress-bar1{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: var(--first-color);
+    height: 25px;
+    width: 0;
+}
+.progress-bar2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: var(--first-color);
+    height: 25px;
+    width: 0;
+}
+.progress-bar3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: var(--first-color);
+    height: 25px;
+    width: 0;
+}
+.progress-bar4{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: var(--first-color);
+    height: 25px;
+    width: 0;
+}
+.progress-bar5{
+    animation: load5 3s normal forwards;
+    border-radius: 50px;
+    background-color: var(--first-color);
+    height: 25px;
+    width: 0;
+}
+.progress p{
+    color: var(--section-color);
+    padding: 5px;
+
+}
+@keyframes load1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes load2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes load3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes load4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes load5{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.Courses{
+    background-color: var(--section-color);
+}
+.card{
+    border: none;
+    outline: none;
+    box-shadow: 0px -1px 38px 18px rgba(242,162,155,0.3);
+    -webkit-box-shadow: 0px -1px 38px 18px rgba(242,162,155,0.3);
+    -moz-box-shadow: 0px -1px 38px 18px rgba(242,162,155,0.3);
+}
+.card .circle{
+    height: 70px;
+    width: 70px;
+    background-color: var(--main-color);
+    color: var(--first-color);
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.card:hover .circle{
+    background-color: var(--first-color);
+    color: var(--main-color);
+    transition: 0.5s;
+}
+.control ul li{
+    background-color: var(--first-color);
+    padding: 5px 15px;
+    color: var(--section-color);
+    display: inline-block;
+    cursor: pointer;
+}
+.portfolio .btn1:active{
+background-color: var(--main-color);
+color: var(--section-color);
+}
+.item{
+    position: relative;
+    justify-self: flex-start;
+}
+.item:hover{
+    box-shadow: 0px -1px 38px 18px rgb(242, 162, 155,0.7);
+    -webkit-box-shadow: 0px -1px 38px 18px rgb(242, 162, 155,0.7);
+    -moz-box-shadow: 0px -1px 38px 18px rgb(242, 162, 155,0.7);
+    transition: 0.5s;
+}
+.item span{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size: 40px;
+    color: var(--first-color);
+    cursor: pointer;
+    opacity: 0;
+}
+.item:hover span{
+    opacity: 1;
+    transition: 0.5s;
+}
+.item::before{
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(242, 162, 155, 0.3);
+    opacity: 1;
+    position: absolute;
+}
+.item:hover::before{
+    opacity: 1;
+    transition: 0.3s;
+}
+.blog{
+    background-color: var(--section-color);
+}
+a{
+    color: var(--first-color);
+}
+a:hover{
+    color: var(--main-color);
+}
+.content .circle{
+    height: 70px;
+    width: 70px;
+    background-color: var(--first-color);
+    color: var(--main-color);
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.content .circle:hover{
+    background-color: var(--main-color);
+    color: var(--first-color);
+    transition: 0.5s;
+}
+.to-top{
+    background-color: var(--section-color);
+    color: var(--first-color);
+    border: 1px solid var(--first-color);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s;
+}
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+.to-top:hover{
+    background-color: var(--first-color);
+    color: var(--section-color);
+}
+/* Start Footer  */
+.footer{
+    background-color: var(--section-color);
+    color: var(--main-color);
+}
+.footer .copyright > span{
+    color: var(--first-color);
+}
+/* End Footer  */
